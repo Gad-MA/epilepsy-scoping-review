@@ -1,4 +1,3 @@
-!main.pdf
 *.acn
 *.acr
 *.alg
@@ -31,6 +30,7 @@
 *.nls
 *.out
 *.pdf
+!main.pdf
 *.pyg
 *.run.xml
 *.snm
