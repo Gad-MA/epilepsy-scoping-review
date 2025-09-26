@@ -1,18 +1,31 @@
 \documentclass[12pt]{article}
 \usepackage{microtype}
 \usepackage[a4paper, margin=1in]{geometry}
-\usepackage[hidelinks]{hyperref}
-\usepackage[backend=bibtex ,sorting=none, giveninits=true]{biblatex}
+\usepackage[colorlinks=true, citecolor=black]{hyperref}
+\usepackage[backend=bibtex ,sorting=none, giveninits=true, sortcites=true]{biblatex}
 \addbibresource{refs.bib}
+\usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage{xcolor}
 \newcommand\Tstrut{\rule{0pt}{2.6ex}}       % Top strut
 \newcommand\Bstrut{\rule[-1.2ex]{0pt}{0pt}} % Bottom strut
+\usepackage{makecell}
+\usepackage{array}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\renewcommand{\arraystretch}{1.5}
+
 \begin{document}
+
+\input{introduction.tex}
+
+\input{methodology/main.tex}
 
 \input{Results/main}
 
 \input{Discussion/main}
+
+\input{conclusion.tex}
 
 \printbibliography
 

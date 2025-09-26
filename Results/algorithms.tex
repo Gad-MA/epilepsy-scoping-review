@@ -9,6 +9,7 @@ Other neural network architectures were also explored. A CNN-based model was fou
 
 For the forecasting and prediction tasks, one study \cite{Meisel2020-ii} employed LSTM neural networks trained using leave-one-subject-out cross-validation on continuously collected retrospective data. Another study \cite{Vieluf2023-ta} selected Deep Canonically Correlated Autoencoders (DCCAE) for training and validation, testing three different architectures: Fully Connected DCCAE (FC-DCCAE), Convolutional Neural Network DCCAE (CNN-DCCAE), and Gated Recurrent Unit DCCAE (GRU-DCCAE). Among these, GRU-DCCAE yielded the best clustering accuracy of 68.89\%. Both studies lacked real-time implementation, relying instead on retrospective or offline data analysis.
 
+\input{Results/tables/deep_learning_algos.tex}
 
 \subsubsection{Ensemble Methods}
 Ensemble learning, which combines multiple machine learning models to improve predictive performance, was a prominent and effective strategy in several detection studies. Ensemble classifiers were used in 23\% of the detection studies  including bagging, boosting, and more complex stacked architectures \cite{Wang2022-lt, Chowdhury2022-bi, Vakilna2024-hk, Dong2022-oo, Jiang2022-zu, Wu2024-yl}. Also, one forecasting study reported the use of random forest (RF) classifier \cite{Vieluf2023-zv}.
