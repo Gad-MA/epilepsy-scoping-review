@@ -10,24 +10,24 @@
 \caption{Deep Learning and Personalized Algorithms}
 \label{tab:deep_and_personalized_algos}
 
-\begin{tabularx}{\textwidth}{lCCCcC}
-\hline
+\begin{tabularx}{\textwidth}{@{}lCCCCC@{}}
+\toprule
 \thead{Algorithm} & \thead{Studies} & \thead{Real-time\\Analysis} & \thead{Sensitivity} & \thead{FAR} & \thead{AUC-ROC} \\
-\hline
+\midrule
 \multirow{2}{*}{CNN} & \cite{Yu2023-ss} & \multirow{2}{*}{No} & 95\% & --- & 0.769 \\ 
 % \cline{2-2}\cline{4-6}
  & \cite{Tang2021-td} &  & 80\% & 13.63/24h & 0.752 \\ 
-\hline
+\midrule
 CNN + LSTM & \cite{Yu2023-ss} & No & 83.9\% & --- & 0.789 \\ 
-\hline 
+\midrule 
 LSTM & \cite{Wang2025-ql} & Yes & --- & 8.46/24h & --- \\ 
-\hline
+\midrule
 ANN & \cite{Larsen2024-vn} & No & 96\% & 0.23/Night & --- \\ 
-\hline
+\midrule
 Transfer Learning$^a$ & \cite{Nasseri2021-xn} & --- & 67\% & 4.8/24h & 0.97 \\
-\hline
+\midrule
 Personalized Autoencoder$^a$ & \cite{Yu2023-ss} & No & 100\% & [0.0--95.36]/24h & --- \\
-\hline
+\bottomrule
 \end{tabularx}
 
 \vspace{0.5em}
@@ -48,23 +48,36 @@ $^a$Algorithms with personalization.
 \caption{Ensemble Algorithms}
 \label{tab:ensemble_algos}
 
-\begin{tabularx}{\textwidth}{@{}lCCCCCC@{}}
+\begin{tabularx}{\textwidth}{@{}CCCCCCC@{}}
 \toprule
-Algorithm & Studies & Inpatient /Outpatient & Real-Time Analysis & Sensitivity & FAR/24h & Accuracy \\
+\thead{Algorithm} & \thead{Studies} & \thead{Inpatient/\\Outpatient} & \thead{Real-Time\\Analysis} & \thead{Sensitivity} & \thead{FAR/24h} & \thead{Accuracy} \\
 \midrule
 \multirow{2}{*}{Random Forest} & \cite{Wang2022-lt} & Outpatient & \multirow{2}{*}{No} & 90\% & 1.21 & --- \\
  & \cite{Vakilna2024-hk} & Inpatient &  & 87\% & 0.21 & 93\% \\
-\hline
+\midrule
 Bagged decision Tree Classifier & \cite{Chowdhury2022-bi} & Outpatient & Yes & --- & --- & 95.1\% \\
-\hline
+\midrule
 XGBoost & \cite{Jiang2022-zu} & Inpatient & Yes & 80\% & 1.1 & --- \\
-\hline
-\multirow{2}{*}{Two-Layer Ensemble Model} & \multirow{2}{*}{\cite{Dong2022-oo}} & \multirow{2}{*}{Outpatient} & \multirow{2}{*}{No} & 76.84\% (Overall) & 0.98 (Overall) & 97.28\% (Overall) \\
+\midrule
+\multirow{2}{*}{}{Two-Layer Ensemble Model} & \multirow{2}{*}{\cite{Dong2022-oo}} & \multirow{2}{*}{Outpatient} & \multirow{2}{*}{No} & 76.84\% (Overall) & 0.98 (Overall) & 97.28\% (Overall) \\
  &  &  &  & 94.57\% (Overall) & 0.46 (Night) & 91.37\% (Night) \\
 \bottomrule
 \end{tabularx}
 \end{subtable}
 
+
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}
+    \footnotesize
+    \ContinuedFloat
+    \caption{Algorithms (Detection) cont.}
+    \label{tab:algos_cont}
+    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Traditional Machine Learning
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,17 +87,41 @@ XGBoost & \cite{Jiang2022-zu} & Inpatient & Yes & 80\% & 1.1 & --- \\
     \label{tab:trad_ml_algos}
 \begin{tabularx}{\textwidth}{@{}CCCCCCC@{}}
 \toprule
-Algorithm & Studies & Real-Time Analysis & Sensitivity & FAR/24h & Accuracy & AUC-ROC \\ \midrule
+\thead{Algorithm} & \thead{Studies} & \thead{Real-Time\\Analysis} & \thead{Sensitivity} & \thead{FAR/24h} & \thead{Accuracy} & \thead{AUC-ROC} \\ \midrule
 \multirow{6}{*}{SVM} & \cite{Poh2012-af} & No & 88\% & 1.0 & --- & --- \\
  & \cite{Ge2023-ab} & No & 87.13\% & --- & --- & --- \\
  & \cite{Xu2022-tx} & Yes & --- & 0.08 & 100\% & --- \\
  & \cite{Wang2025-my} & No & 100\% & 0.107 & --- & --- \\
  & \cite{Li2022-ty} & No & 81.7\% & 0.64 & --- &  \\
  & \cite{Milosevic2016-ee} & No & 90.01\% & --- & --- & --- \\
-\hline
+\midrule
 KNN & \cite{Ge2023-ab} & No & 88.16\% & --- & 93.16\% & --- \\
-\hline
+\midrule
 LDA & \cite{Hamlin2021-sd} & No & --- & --- & --- & 0.914 \\ \bottomrule
+\end{tabularx}
+
+\vspace{0.5em}
+
+All are inpatient studies.
+
+\end{subtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Rule-Based
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+\begin{subtable}{\textwidth}
+    \caption{Rule-based and Threshold-based Algorithms}
+    \label{tab:rule_based_algos}
+\begin{tabularx}{\textwidth}{@{}CCCCCC@{}}
+\toprule
+\thead{Studies} & \thead{Real-Time\\Analysis} & \thead{Sensitivity} & \thead{FAR} & \thead{Accuracy} & \thead{AUC-ROC} \\ \midrule
+\cite{Hegarty-Craver2021-hk} & Yes & 92\% & 2.09/24h & --- & --- \\
+\cite{Ali2020-ke} & Yes & 85\% & 26.09\% & --- & 0.8682 \\
+\cite{Arends2018-ew} & Yes & 86\% & 0.25/Night & --- & --- \\
+\cite{Van_Andel2017-yx} & No & 87\% & 6.3/Night & --- & --- \\
+\cite{Cogan2017-lg} & No & --- & --- & 100\% & --- \\
+\cite{Gheryani2017-yg} & No & 97\% & 4\% & --- & --- \\ \bottomrule
 \end{tabularx}
 
 \vspace{0.5em}
