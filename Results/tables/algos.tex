@@ -48,10 +48,10 @@ $^a$Algorithms with personalization.
 \caption{Ensemble Algorithms}
 \label{tab:ensemble_algos}
 
-\begin{tabularx}{\textwidth}{lCCCCCC}
-\hline
+\begin{tabularx}{\textwidth}{@{}lCCCCCC@{}}
+\toprule
 Algorithm & Studies & Inpatient /Outpatient & Real-Time Analysis & Sensitivity & FAR/24h & Accuracy \\
-\hline
+\midrule
 \multirow{2}{*}{Random Forest} & \cite{Wang2022-lt} & Outpatient & \multirow{2}{*}{No} & 90\% & 1.21 & --- \\
  & \cite{Vakilna2024-hk} & Inpatient &  & 87\% & 0.21 & 93\% \\
 \hline
@@ -61,8 +61,35 @@ XGBoost & \cite{Jiang2022-zu} & Inpatient & Yes & 80\% & 1.1 & --- \\
 \hline
 \multirow{2}{*}{Two-Layer Ensemble Model} & \multirow{2}{*}{\cite{Dong2022-oo}} & \multirow{2}{*}{Outpatient} & \multirow{2}{*}{No} & 76.84\% (Overall) & 0.98 (Overall) & 97.28\% (Overall) \\
  &  &  &  & 94.57\% (Overall) & 0.46 (Night) & 91.37\% (Night) \\
-\hline
+\bottomrule
 \end{tabularx}
+\end{subtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Traditional Machine Learning
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+\begin{subtable}{\textwidth}
+    \caption{Traditional Machine Learning Algorithms}
+    \label{tab:trad_ml_algos}
+\begin{tabularx}{\textwidth}{@{}CCCCCCC@{}}
+\toprule
+Algorithm & Studies & Real-Time Analysis & Sensitivity & FAR/24h & Accuracy & AUC-ROC \\ \midrule
+\multirow{6}{*}{SVM} & \cite{Poh2012-af} & No & 88\% & 1.0 & --- & --- \\
+ & \cite{Ge2023-ab} & No & 87.13\% & --- & --- & --- \\
+ & \cite{Xu2022-tx} & Yes & --- & 0.08 & 100\% & --- \\
+ & \cite{Wang2025-my} & No & 100\% & 0.107 & --- & --- \\
+ & \cite{Li2022-ty} & No & 81.7\% & 0.64 & --- &  \\
+ & \cite{Milosevic2016-ee} & No & 90.01\% & --- & --- & --- \\
+\hline
+KNN & \cite{Ge2023-ab} & No & 88.16\% & --- & 93.16\% & --- \\
+\hline
+LDA & \cite{Hamlin2021-sd} & No & --- & --- & --- & 0.914 \\ \bottomrule
+\end{tabularx}
+
+\vspace{0.5em}
+
+All are inpatient studies.
 
 \end{subtable}
 
