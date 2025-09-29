@@ -1,12 +1,16 @@
 \begin{table}
-    \caption{Algorithms (Detection)}
-    \vspace{1em}
-    \label{tab:algos}
     \footnotesize
-\begin{tabularx}{\textwidth}{lCCCcC}
+    \caption{Algorithms (Detection)}
+    \label{tab:algos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Deep Learning and personalized methods
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{subtable}{\textwidth}
+
+\caption{Deep Learning and Personalized Algorithms}
+\label{tab:deep_and_personalized_algos}
+
+\begin{tabularx}{\textwidth}{lCCCcC}
 \hline
 \thead{Algorithm} & \thead{Studies} & \thead{Real-time\\Analysis} & \thead{Sensitivity} & \thead{FAR} & \thead{AUC-ROC} \\
 \hline
@@ -27,20 +31,24 @@ Personalized Autoencoder$^a$ & \cite{Yu2023-ss} & No & 100\% & [0.0--95.36]/24h 
 \end{tabularx}
 
 \vspace{0.5em}
+
 All are inpatient studies.
 
 $^a$Algorithms with personalization.
-\end{table}
 
-\begin{table}
-    \caption{Table 2b: Ensemble Methods}
-    \vspace{1em}
-    \label{tab:ensemble_algos}
-    \footnotesize
-\begin{tabularx}{\textwidth}{lCCCCCC}
+\vspace{1em}
+
+\end{subtable}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Ensemble Methods
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{subtable}{\textwidth}
+
+\caption{Ensemble Algorithms}
+\label{tab:ensemble_algos}
+
+\begin{tabularx}{\textwidth}{lCCCCCC}
 \hline
 Algorithm & Studies & Inpatient /Outpatient & Real-Time Analysis & Sensitivity & FAR/24h & Accuracy \\
 \hline
@@ -56,5 +64,6 @@ XGBoost & \cite{Jiang2022-zu} & Inpatient & Yes & 80\% & 1.1 & --- \\
 \hline
 \end{tabularx}
 
-\vspace{0.5em}
+\end{subtable}
+
 \end{table}
