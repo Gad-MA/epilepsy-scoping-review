@@ -871,7 +871,8 @@
   keywords  = {Arterial oxygenation; electrodermal activity; heart rate;
                limited-channel EEG monitoring; seizure detection; wrist-worn
                device},
-  language  = {en}
+  language  = {en},
+  annotation = {Using a rule-based method, this study developed a multi-biosignal seizure detection pattern defined by a sequence of heart rate increase, followed by a decrease in blood oxygen saturation (SpO2), and then a rise in electrodermal activity (EDA). This approach achieved 100% accuracy in detecting generalized tonic-clonic seizures (GTCS), showcasing that well-designed physiological rule-based heuristics can supplement machine learning methods in wearable devices.}
 }
 
 @inproceedings{De_Cooman2018-pq,
@@ -903,7 +904,8 @@
   volume    = 71,
   pages     = {1--13},
   year      = 2022,
-  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html}
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  annotation = {This study used ACC and GYR data collected in outpatient settings from seven patients. Employing a two-layer ensemble method stacking multiple base learners—random forest (RF), extra trees, gradient boosting decision trees, and AdaBoost—it demonstrated superior performance compared to single-layer models, emphasizing the efficacy of ensemble approaches in enhancing seizure detection accuracy.}
 }
 
 @article{Forooghifar2022-dm,
@@ -1328,7 +1330,8 @@
   year      = 2020,
   keywords  = {precision medicine; seizure forecasting; wearable devices},
   copyright = {http://creativecommons.org/licenses/by-nc/4.0/},
-  language  = {en}
+  language  = {en},
+  annotation = {Using the Empatica E4 device’s ACC, PPG, EDA, and TEMP sensors, this study investigated seizure forecasting via LSTM neural networks. Combining all sensor modalities yielded the best performance, achieving statistically significant seizure forecasting in 30 out of 69 patients, with a mean sensitivity of 75.6%, mean time in warning of 47.2%, and mean prediction horizon of 31.6 minutes. This highlights the complementary value of multiple physiological signals for effective seizure prediction.}
 }
 
 @article{Milosevic2016-ee,
@@ -1343,7 +1346,8 @@
   number    = 5,
   pages     = {1333--1341},
   month     = sep,
-  year      = 2016
+  year      = 2016,
+  annotation = {Investigating optimal sensor placement, this study used four wired ACC sensors and two sEMG sensors placed on wrists, ankles, and biceps, applying a least squares support vector machine (LS-SVM) for classification. Findings suggested that the left wrist and right ankle are ideal for ACC placement, while bilateral biceps provide optimal sEMG signal locations. This provides critical guidelines for wearable sensor configuration to balance wearability and detection accuracy.}
 }
 
 @article{Nasseri2021-ny,
@@ -1431,7 +1435,8 @@
   year      = 2021,
   keywords  = {epilepsy; machine learning; seizure detection; wearable devices},
   copyright = {https://iopscience.iop.org/page/copyright},
-  language  = {en}
+  language  = {en},
+  annotation = {This study used ACC, PPG, and electrodermal activity (EDA) modalities alongside biomarkers including temperature (TEMP), heart rate (HR), and blood volume pulse (BVP) via the Empatica E4 wristband in both inpatient and outpatient settings. By fine-tuning a pre-trained transfer learning model with patient-specific data, the false alarm rate (FAR) was significantly reduced from 11.3 to 2.33 per day, demonstrating the effectiveness of personalized model adaptation in wearable seizure detection.}
 }
 
 @article{Onorati2017-bn,
@@ -1540,7 +1545,8 @@
   month     = may,
   year      = 2012,
   copyright = {http://onlinelibrary.wiley.com/termsAndConditions\#vor},
-  language  = {en}
+  language  = {en},
+  annotation = {This study showed that a semi-patient-specific approach, incorporating prior seizure examples from the test patient into training data, increased sensitivity from 88% to 94% compared to generic models. Conducted in inpatient environments, the study also successfully introduced extensive real-world non-seizure data to mitigate false alarm rates, yielding more reliable performance estimates.}
 }
 
 
@@ -1761,7 +1767,8 @@
   pages     = {120986},
   month     = dec,
   year      = 2023,
-  language  = {en}
+  language  = {en},
+  annotation = {This study applied Deep Canonically Correlated Autoencoders (DCCAE) with three architectures, fully connected, CNN-based, and gated recurrent units, to differentiate pre-ictal from interictal periods through unsupervised clustering. Results demonstrated the DCCAE framework’s ability to accurately segment seizure-related periods using autonomic sensor data, highlighting its potential for seizure forecasting without requiring labeled data.}
 }
 
 @article{Vieluf2023-zv,
@@ -1804,8 +1811,7 @@
   pages    = {118--127},
   month    = nov,
   year     = 2023,
-  keywords = {Clinical data; Pediatric patients; Seizure forecasting;
-              Supervised learning; Wearables},
+  keywords = {Clinical data; Pediatric patients; Seizure forecasting; Supervised learning; Wearables},
   language = {en}
 }
 
@@ -1884,7 +1890,8 @@
   volume    = 74,
   pages     = {1--10},
   year      = 2025,
-  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html}
+  copyright = {https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html},
+  annotation = {Exploring ACC, gyroscope (GYR), surface electromyography (sEMG), and EDA modalities, this study introduced derived biomarkers pitch and roll extracted from ACC and GYR data. Substituting raw ACC signals with these biomechanical markers improved model performance across all tested classifiers. Patient-specific experiments on 10 individuals showed that half achieved accuracy exceeding 90%, highlighting the importance of personalized feature engineering in seizure detection.}
 }
 
 @article{Wu2024-yl,
@@ -1970,5 +1977,57 @@
   year      = 2023,
   keywords  = {deep learning; epilepsy; seizure detection; seizures; wearables},
   copyright = {http://creativecommons.org/licenses/by-nc-nd/4.0/},
-  language  = {en}
+  language  = {en},
+  annotation = {This study involved 166 pediatric patients in inpatient settings and did not perform real-time analysis. It proposed a CNN-LSTM fusion model utilizing accelerometry (ACC) and photoplethysmography (PPG), which was the best performing algorithm overall. It achieved a sensitivity of 83.9% across seizure types, improving to 95% sensitivity specifically for generalized tonic-clonic seizures (GTCS), and detected 19 out of 28 seizure types. The study highlights the promise of multimodal biosignals combined with deep learning for comprehensive seizure detection.}
 }
+@article{Ziobro24-neo,
+  author    = {Ziobro, Julie and Pilon, Betsy and Wusthoff, Courtney J. and Benedetti, Giulia M. and Massey, Shavonne L. and Yozawitz, Elissa and Numis, Adam L. and Pressler, Ronit and Shellhaas, Renée A.},
+  title     = {Neonatal Seizures: New Evidence, Classification, and Guidelines},
+  journal   = {Epilepsy Currents},
+  year      = {2024},
+  volume    = {24},
+  number    = {3},
+  pages     = {e375--e389},
+  doi       = {10.1177/15357597241253382},
+  url       = {https://doi.org/10.1177/15357597241253382},
+  abstract  = {Neonates are susceptible to seizures due to their unique physiology and combination of risks associated with gestation, delivery, and the immediate postnatal period. Advances in neonatal care have improved outcomes for some of our most fragile patients, but there are persistent challenges for epileptologists in identifying neonatal seizures, diagnosing etiologies, and providing the most appropriate care, with an ultimate goal to maximize patient outcomes. In just the last few years, there have been critical advances in the state of the science, as well as new evidence-based guidelines for diagnosis, classification, and treatment of neonatal seizures. This review provides updated knowledge about the pathophysiology of neonatal seizures, classification of the provoked seizures and neonatal epilepsies, state-of-the-art guidance on EEG monitoring in the neonatal ICU, current treatment guidelines, and potential for future advancement in treatment.}
+}
+
+@article{Chen2023-ns,
+  title     = {Neonatal Seizure Detection Using a Wearable Multi-Sensor System},
+  author    = {Chen, Hongyu and Wang, Zaihao and Lu, Chunmei and Shu, Feng and 
+               Chen, Chen and Wang, Laishuan and Chen, Wei},
+  abstract  = {Neonatal seizure is an important clinical symptom of brain 
+               dysfunction, which is more common in infancy than in childhood. 
+               At present, video electroencephalogram (VEEG) technology is widely 
+               used in clinical practice. However, VEEG technology has several 
+               disadvantages, such as interference with infant movement due to 
+               connecting wires and skin irritation from gel patch or disk 
+               electrodes. To address these issues, we developed a wearable 
+               multi-sensor platform for newborns to collect physiological and 
+               movement signals. In this study, we designed a second-generation 
+               multi-sensor platform and developed an automatic detection 
+               algorithm for neonatal seizures based on ECG, respiration, and 
+               acceleration. Data for 38 neonates were recorded at the Children’s 
+               Hospital of Fudan University in Shanghai, totaling approximately 
+               300 h of recordings. Four patients had seizures during data 
+               collection (30 episodes in total). Three seizure detectors were 
+               compared: one using ECG, respiration, and acceleration features; 
+               one using respiration and acceleration; and one using ECG alone. 
+               Results show that multimodal feature detectors achieved better 
+               overall performance, reduced false alarms, and higher F-measures 
+               than unimodal detectors.},
+  journal   = {Bioengineering},
+  publisher = {MDPI},
+  volume    = 10,
+  number    = 6,
+  pages     = {658},
+  year      = 2023,
+  doi       = {10.3390/bioengineering10060658},
+  url       = {https://www.mdpi.com/2306-5354/10/6/658},
+  issn      = {2306-5354},
+  language  = {en},
+  keywords  = {neonatal seizure; wearable sensors; multimodal detection; ECG; 
+               respiration; acceleration}
+}
+
