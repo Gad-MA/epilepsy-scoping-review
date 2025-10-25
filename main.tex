@@ -2,7 +2,14 @@
 \usepackage{microtype}
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage[colorlinks=true]{hyperref}
-\usepackage[backend=bibtex ,sorting=none, giveninits=true, sortcites=truee]{biblatex}
+\usepackage[
+  backend=bibtex,
+  sorting=none,
+  giveninits=true,
+  sortcites=true,
+  terseinits=true,
+  style=numeric-comp
+  ]{biblatex}
 \DeclareFieldFormat{annotation}{\par\textit{#1}}
 \renewbibmacro*{finentry}{%
   \setunit{\finentrypunct}%
