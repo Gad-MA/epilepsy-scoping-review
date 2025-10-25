@@ -11,6 +11,13 @@
   style=numeric-comp
   ]{biblatex}
 \DeclareFieldFormat{annotation}{\par\textit{#1}}
+\renewbibmacro*{begentry}{%
+  \iffieldundef{annotation}
+    {}
+    {\iffieldequalstr{usera}{double}
+      {\printtext{**}}
+      {\printtext{*}}}%
+}
 \renewbibmacro*{finentry}{%
   \setunit{\finentrypunct}%
   \printfield{annotation}%
