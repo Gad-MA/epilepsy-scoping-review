@@ -1,6 +1,6 @@
 \begin{table}
     \footnotesize
-    \caption{Algorithms (Detection)}
+    \caption{Algorithms for Detection}
     \label{tab:algos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Deep Learning and personalized methods
@@ -29,23 +29,14 @@ Transfer Learning$^a$ & \cite{Nasseri2021-xn} & --- & 67\% & 4.8/24h & 0.97 \\
 Personalized Autoencoder$^a$ & \cite{Yu2023-ss} & No & 100\% & [0.0--95.36]/24h & --- \\
 \bottomrule
 \end{tabularx}
-
-\vspace{0.5em}
-
-All are inpatient studies.
-
-$^a$Algorithms with personalization.
-
-\vspace{1em}
-
 \end{subtable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Ensemble Methods
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
 \begin{subtable}{\textwidth}
-
-\caption{Ensemble Algorithms}
+\caption{Ensemble Algorithms*}
 \label{tab:ensemble_algos}
 
 \begin{tabularx}{\textwidth}{@{}CCCCCCC@{}}
@@ -76,7 +67,7 @@ XGBoost & \cite{Jiang2022-zu} & Inpatient & Yes & 80\% & 1.1 & --- \\
 \begin{table}
     \footnotesize
     \ContinuedFloat
-    \caption{Algorithms (Detection) cont.}
+    \caption{Algorithms for Detection Cont.}
     \label{tab:algos_cont}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,11 +91,6 @@ KNN & \cite{Ge2023-ab} & No & 88.16\% & --- & 93.16\% & --- \\
 \midrule
 LDA & \cite{Hamlin2021-sd} & No & --- & --- & --- & 0.914 \\ \bottomrule
 \end{tabularx}
-
-\vspace{0.5em}
-
-All are inpatient studies.
-
 \end{subtable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,10 +111,11 @@ All are inpatient studies.
 \cite{Gheryani2017-yg} & No & 97\% & 4\% & --- & --- \\ \bottomrule
 \end{tabularx}
 
+\end{subtable}
+
 \vspace{0.5em}
 
-All are inpatient studies.
-
-\end{subtable}
+*All studies were inpatient studies except for for table \ref{tab:ensemble_algos} (Ensemble Algorithms) included mixed population.
+$^a$Algorithms with personalization.
 
 \end{table}
